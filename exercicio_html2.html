@@ -1,0 +1,147 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>			
+			Instituto de Computação
+		</title>
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+		
+		<h1> Formulário de Contato</h1>
+		<p>
+			Por favor, preencha o formulário abaixo e clique no botão "Enviar Mensagem". Agradecemos por seu contato.
+		</p>
+		
+		<form>
+			<fieldset>
+				<legend>Dados Básicos</legend>
+				<table>
+					<tr>
+						<td>
+							Nome: <input type="text" name="nome" maxlength="100">
+						</td>
+
+					</tr>
+
+					<tr>
+						<td>
+							Email: <input type="email" value="seu_email@mail.com" name="email" maxlength="100">
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							Website: <input type="text" value="http://" name="site" maxlength="200">
+						</td>
+					</tr>
+				</table>
+				
+
+			</fieldset>
+
+
+
+			<fieldset>
+				<legend>Seu curso no Instituto de Computação: </legend>
+				<table>
+					<tr>
+						<td>
+							<input type="radio" name="curso" value="cc"> Ciência da Computação 
+						</td>
+
+					</tr>
+
+					<tr>
+						<td>
+							<input type="radio" name="curso" value="si"> Sistemas de Informação 
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<input type="radio" name="curso" value="ec"> Engenharia da Computação
+						</td>
+					</tr>
+				</table>
+				
+
+			</fieldset>
+
+
+			<fieldset>
+				<legend>Assinale as linguagens já usadas por você: </legend>
+
+					<input type="radio" name="lp" value="Java"> Java
+					<input type="radio" name="lp" value="C"> C
+					<input type="radio" name="lp" value="C++"> C++
+					<input type="radio" name="lp" value="Perl"> Perl
+					<input type="radio" name="lp" value="Javascript"> Javascript			
+
+			</fieldset>
+
+			<fieldset>
+				<legend>Dados Complementares: </legend>
+				<table>
+					<tr>
+						<td>
+							Cor favorita: <input type="color" name="favcolor" value="#ff0000"> 
+
+						</td>
+
+					</tr>
+
+					<tr>
+						<td>
+							Data de Nascimento: <input type="date" name="nascimento">
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							Ano de Entrada no seu curso: <input type="month" name="anoIngresso">
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							Nota para esse site: <input type="range" name="nota" min="0" max="10">
+						</td>
+					</tr>
+
+				</table>
+				
+
+			</fieldset>
+
+			<fieldset>
+				<legend>Área de Atuação: </legend>
+
+					<select name="area" id="area">   <option value="1">Banco de Dados</option>  <option value="2">Educação a Distância</option>  <option value="3">Engenharia de Software</option>  <option value="4">Otimização</option>  <option value="5">Programação para a Web</option>  <option value="6">Recuperação de Informação</option>  <option value="7">Redes de Computadores</option> </select>			
+
+			</fieldset>
+
+
+			<fieldset>
+				<legend>Submeta seu currículo: </legend>
+
+					<input type="file" name="curriculo"> 		
+
+			</fieldset>
+
+			<fieldset>
+				<legend>Digite sua mensagem: </legend>
+
+					<textarea name="mensagem" rows="4" cols="50">   Mensagem... </textarea>
+		
+
+			</fieldset>
+
+			<input type="reset" value="Resetar Dados" />  <input type="submit" name="submit" value="Enviar Mensagem" /> 
+
+		</form>
+
+	</body>
+</html>
